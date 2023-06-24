@@ -1,0 +1,100 @@
+body{
+	background-color:#e6e6e6;
+
+	
+	margin:none;
+}
+.nav{
+	display:flex;
+	justify-content:space-between;
+	height:50px;
+	width:100%;
+	background:linear-gradient(to left,black,white);
+	}
+.logo{
+	font-size:40px;
+	color:;
+	padding-left:10px;
+	user-select:none;
+}
+span{
+	display:block;
+	height:5px;
+	width:20px;
+	background-color:silver;
+	position:relative;
+	top:10px;
+	right:15px;
+	display:flex;
+	flex-direction:row;
+	margin:3px; 
+	cursor:pointer;
+	
+}
+.check{
+	width:22px;
+	height:25px; 
+	appearance:none;
+	content:'*';
+}
+
+ .check{
+	position:absolute;
+	top:18px;
+	right:23px;
+	
+	cursor:pointer;
+	z-index:;
+}
+
+
+.link {
+	display:flex;
+	flex-direction:column;
+	width:200px;
+	height:100%;
+	text-align:center;
+	position:fixed;
+	top:60px;
+	bottom:100px;
+	background:linear-gradient(black,white);
+	transition:.5s;
+	z-index:2;
+}
+
+.link a{
+	text-decoration:none;
+	color:white;
+	font-size:25px;
+	padding:15px 0px;
+	transition:0.2s;
+	
+	
+}
+
+.link a:hover
+{
+	background-color:#bdbdbd;
+	color:black;
+}
+
+.check[type="checkbox"]:not(:checked )+.link
+{
+	transform:translateX(-210px);
+}
+	.footer{
+		height:100px;
+		width:100%;
+		background:linear-gradient(to left,black,white);
+		position:fixed;
+		bottom:0px;
+	}
+		.check[type="checkbox"]:checked +.footer
+		{
+			transform:translateX(210px);
+	
+	
+	
+	
+	
+	

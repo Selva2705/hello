@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  
+}
+.back{
+
+	height:107px;
+	width:209px;
+	box-shadow:0px 0px 5px 0.3px;
+	border:1px solid balck;
+	border-radius:50px;
+	transition:.4s;
+	position:relative;
+	animation:on;
+}
+.button{
+	height:100px;
+	width:100px;
+	background-color:white;
+	background-color: ;
+	box-shadow:0px 0px 5px 0.1px;
+	position:absolute;
+	outline:none;
+	border-radius:50%;
+	transition:.4s;
+	z-index:2;
+}
+.button{
+	appearance:none;
+	
+	
+}
+.button[type="checkbox"]:checked +.back{
+	background-color:#00ff00;
+}
+	
+.button:checked {
+	transform:translateX(100px);
+	
+
+}
+.button[type="checkbox"]:not(:checked) + .back{
+	background-color:red;
+}
+.button[type="checkbox"]:not(:checked){
+	
+	
+	transform:translateX(0px);
+	
+}
+.button:checked + div{
+	background-color:green;
+}
+	@keyfranes on{
+		from{
+			
+	
+	
+	
